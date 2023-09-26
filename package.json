@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node build/index.js",
-    "dev": "tsc-watch --onSuccess \"npm start\""
+    "start": "tsc && node build/index.js",
+    "dev": "tsc-watch --onSuccess \"npm start\"",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/apicache": "^1.6.2",
